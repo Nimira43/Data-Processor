@@ -1,0 +1,15 @@
+{
+  "name": "data-processor",
+  "version": "1.0.0",
+  "description": "A simple class that receives raw data, processes it privately and then outputs the processed data. Using private variables and methods in TypScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Rabone",
+  "license": "MIT",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

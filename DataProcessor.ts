@@ -12,7 +12,18 @@ class DataProcessor {
   }
 
   private processData(): number[] {
-    return this.rawData.map(num => (num - Math.min(...this.rawData)))
+    const minVal = Math.min(...this.rawData) 
+    const maxVal = Math.max(...this.rawData) 
+
+    console.log('Raw Data:', this.rawData) 
+    console.log('Min Value:', minVal) 
+    console.log('Max Value:', maxVal)
+
+    return this.rawData.map(num => { 
+      const normalisedValue = (num - minVal) / (maxVal - minVal) 
+      console.log(`Original: ${num}, Normalised: ${normalisedValue}`) 
+      return normalisedValue 
+    })
   }
 }
 
